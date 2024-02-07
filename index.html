@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lanjewar Family Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      margin: 0;
+    }
+    main {
+      padding: 40px 20px;
+      text-align: center;
+      flex: 1;
+    }
+    .member-button {
+      display: inline-block;
+      background-color: #fff;
+      border: 2px solid #333;
+      padding: 20px;
+      margin: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .member-button:hover {
+      background-color: #333;
+      color: #fff;
+    }
+    .profile {
+      display: none;
+      background-color: #fff;
+      padding: 20px;
+      border: 2px solid #333;
+      margin-top: 20px;
+    }
+    .profile.active {
+      display: block;
+    }
+    .decorative-line {
+      border-top: 1px solid #ccc;
+      margin-top: 20px;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lanjewar Family Website</h1>
+  </header>
+
+  <main>
+    <p>Welcome to the official Lanjewar family website! This website is dedicated to bringing together all members of the Lanjewar family or those whose surname is Lanjewar. Here, you'll find information about our family, upcoming events, and much more. Feel free to explore!</p>
+    <div class="decorative-line"></div>
+
+    <div class="member-button" onclick="redirectToProfile('priyanshu')">Priyanshu Lanjewar</div>
+    <div class="member-button" onclick="redirectToProfile('ruchi')">Ruchi Lanjewar</div>
+    <div class="member-button" onclick="redirectToProfile('mohit')">Mohit Lanjewar</div>
+  </main>
+
+  <footer>
+    <p>Contact us at <a href="mailto:priyanshu@lanjewar.in">priyanshu@lanjewar.in</a> for more information.</p>
+  </footer>
+
+  <script>
+    function redirectToProfile(profileId) {
+      window.location = profileId + '.lanjewar.in';
+    }
+  </script>
+</body>
+</html>
